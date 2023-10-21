@@ -1,11 +1,11 @@
 import Bookshefts from "./Bookshefs";
-function ListBooks({shelf,title}){
-    return(
+function ListBooks({ data, setter }) {
+    return (
         <div className="list-books-content">
             <div>
-              <Bookshefts title={title} shelf={shelf}  />
+                <Bookshefts data={data} setter={setter} />
             </div>
-          </div>
-    )
+        </div>
+    );
 }
-export default ListBooks
+export default ListBooks;
